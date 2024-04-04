@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+//==============================
+//  DropItem Enable: Activate the system to make the modifications.
+//
+//  ExcellentRate Enable: Enable or Disable the modification [0-1] 
+//  	Rate: Rate to setup (0 - 1000000)
+//  	FilterBy: by default Excellent Items is: Exc="-2" | Dont change this if you wanna modify DropRate of Excellent Items.
+//  	- Name: Defines whether the modification will be made to specific Items.
+//  	- Note: Ideal in case you want to change the Drop Excellent, for example: Name"Silverheart"
+//
+//  ItemNormalRate Enable: Enable or Disable the modification [0-1] 
+//  	Rate: Rate to setup (0 - 1000000)
+//  	FilterBy: by default Normal Items is: Exc="-1" | Dont change this if you wanna modify DropRate of Normal Items.
+//
+//  ItemRateChange Enable: Enable or Disable the modification [0-1] 
+//  	Rate: Rate to setup (0 - 1000000)
+//  	NameItemToChangeRate: Globally changes any items contained within "Name" XXX Word.
+//  	Example: <NameItemToChangeRate Name="Jewel" /> It will change the Rate only for the Jewels.
+//
+//==============================
+// 
+-->
+
+<Root>
+    <DropItem Enable="1">
+
+        <ExcellentRate Enable="1" Rate="10">
+            <FilterBy Exc="-2" Name="" />
+        </ExcellentRate>
+
+        <ItemNormalRate Enable="1" Rate="6000">
+            <FilterBy Exc="-1" />
+        </ItemNormalRate>
+
+        <ItemRateChange Enable="1" Rate="300">
+            <NameItemToChangeRate Name="Jewel" />
+        </ItemRateChange>
+
+    </DropItem>
+</Root>
+
+
+
