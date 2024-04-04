@@ -14,8 +14,7 @@ Support to IGCN Files.
 ## Usage
 
 1. Clone or download this repository to your system.
-2. Install dependencies by running `pip install -r requirements.txt`.
-3. Place your XML files in the `EachMonsterMapDrop` folder.
-4. Edit the `rate.xml` file to configure drop rates according to your needs.
-5. Execute the `RateBalance.py` script using Python to apply the modifications.
+2. Place your XML files in the `EachMonsterMapDrop` folder.
+3. Edit the `rate.xml` file to configure drop rates according to your needs.
+4. Execute the `RateBalance.py` script using Python to apply the modifications.
 
